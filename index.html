@@ -1,0 +1,172 @@
+<!--
+*********************************************************************************
+*   index.html                                                                  *
+*                                                                               *
+*   DESIGNER:   Kevin Ellis                                                     *
+*   DEVELOPER:  Kevin Ellis                                                     *
+*   DATE:       September 3, 2024                                               *
+*   LOCATION:   Lexington, KY                                                   *
+*   PURPOSE:                                                                    *
+*                                                                               *
+*   This script is designed to purposefully perform HTML lab experiments as     *
+*   of learning HTML.                                                           *
+*                                                                               *
+*   UPDATES:                                                                    *
+*                                                                               *
+*   September 4, 2024 - Kevin Ellis                                             *
+*   - Example of Tables                                                         *
+*                                                                               *
+*********************************************************************************
+-->
+
+<!--
+*********************
+*   Header Section  *
+*********************
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title for the Page -->
+	<title>HTML Lab</title>
+
+    <!-- Use stylesheet "style.csc" -->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<!--
+*******************
+*   Body Section  *
+*******************
+-->
+<body>
+
+    <!-- Example of Createing a Header ... h1 level ... level h1 through h6 -->
+    <h1>Start of the Lab</h1>
+    <h2>Sub level</h2>
+
+    <!-- Ordered List Example -->
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <!-- Un-ordered List Example -->
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <!-- Hyperlink that links to another page Example -->
+    <a href="https://google.com">Google</a>
+
+    <!-- Tag that is used to enbed an image in the page Example -->
+    <img src="./images/CandO_3203.jpg">
+
+    <!-- Setup divisions or sections in the page Example -->
+    <div>
+        This is the first division or section within the page.
+    </div>
+    <div>
+        This is the second divsion or section within the page.
+    </div>
+
+    <!-- Setup Form Example -->
+    <form>
+
+        <!-- Example of input box -->
+        <label for="TextBox">Text Box</label>
+        <input id="TextBox" type="text" name="name" placeholder="Name">
+
+        <!-- Example of a command button -->
+        <button type="submit">Submit</button>
+
+        <!-- Example of a text area -->
+        <label for="TextArea">Text Area</label>
+        <textarea id="TextArea" name="textarea" rows="4" cols="50"></textarea>
+
+        <!-- Example of a Selection Option with Options -->
+        <label for="SelectOption">Select Option</label>
+        <select name="SelectOption" id="selectionoption">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+
+        <!-- Example of an Option Group with Options -->
+        <label for="OptionGroup" id="optiongroup">Option Group</label>
+        <select name="OptionGroup" id="optiongroup">
+            <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <!-- Example of Field Set or Group of related elements -->
+    <form action="http://127.0.0.1//kevin/index.php" method="POST">
+        <fieldset>
+            <legend>Personalia</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <!-- Example of calculation and showing the result via the output tag -->
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <fieldset>
+            <input type="range" id="a" value="50">
+            +<input type="number" id="b" value="25">
+            =<output name="x" for="a b"></output>
+        </fieldset>
+    </form>
+
+    <!-- Example of creating a Table -->
+    <table>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$200</td>
+        </tr>
+    </table>
+
+    <!-- Example of attempting to connect to MySQL database via Apache Server -->
+    <form action="http://127.0.0.1//kevin/database.php" method="post">
+        <fieldset>
+            <input type="submit" value="Connect">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
+<!--
+********************
+*   End of Script  *
+********************
+-->
